@@ -34,8 +34,9 @@ extension ResultViewController {
           
     answersChosen.forEach {_ in
           
-          let doubles = Dictionary(grouping: answersChosen, by: {$0.animal}).filter
-                        { $1.count > 1 ? true : false }.keys
+          let doubles = Dictionary(grouping: answersChosen, 
+                                   by: {$0.animal}).filter
+                        { $1.count > 1 }.keys
           
           if !doubles.isEmpty {
               
