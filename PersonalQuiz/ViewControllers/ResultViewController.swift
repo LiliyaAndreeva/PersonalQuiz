@@ -52,7 +52,7 @@ extension ResultViewController {
               default:
                   getAnimal(animal: animalCharacthers, describe: Animal.dog.definition)
               }
-          } else {
+          } else if doubles.isEmpty || doubles.count == 2 {
               getAnimal(animal: "🐙", describe: "Вы - осьминог! Пройдите тест заново 😉")
           }
       }
